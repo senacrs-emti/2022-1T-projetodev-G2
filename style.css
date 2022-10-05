@@ -20,12 +20,4 @@ body{
     position: relative;
     top:530px;
     left: 420px;
-    animation: nave 1s infinite linear;
-}
-
-@keyframes nave{
-    0%{left: 220px;}
-    50%{left: 420px}
-    100%{left: 620px}
-
 }
