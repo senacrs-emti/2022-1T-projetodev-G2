@@ -8,7 +8,7 @@ body{
     align-items: center;
 }
 #jogo{
-    width: 900px;
+    width: 80%;
     height: 600px;
     border: solid 1px black;
     box-shadow: rgb(1, 13, 3) 20px 10px 50px;
@@ -17,7 +17,24 @@ body{
     width: 60px;
     height: 60px;
     background-color: blue;
-    position: relative;
     top:530px;
     left: 420px;
+}
+.inimigos{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border: 2px solid gray;
+    margin: 5px;
+}
+.conjunto_de_inimigos{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
 }
