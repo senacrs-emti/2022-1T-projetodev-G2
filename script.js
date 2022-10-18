@@ -1,10 +1,18 @@
-//Funções do jogo:
-var nave = document.querySelector('nave')
-var jogo = document.querySelector('jogo')
+//criar a variavel do jogo e pedir para o canvas trabalhar em 2d
+const canvas = document.getElementById('jogo');
+const ctx = canvas.getContext('2d');
 
-//onde a nave começa
-var x = 0;
-var y = 0;
-//velocidade que se move por frames
-var velocidade = 2;
+let velocidade = 4;
 
+//game loop
+function drawGame() {
+  clearScream();
+  setTimeout(drawGame, 1000 / velocidade);
+};
+//tela de desenho
+function clearScream(){
+  ctx.fillStyle = 'black' ;
+  ctx.fillRect(0,0,canvas.width,canvas.height);
+}
+
+drawGame()
