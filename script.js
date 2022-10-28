@@ -18,5 +18,4 @@ function drawGame() {
   setTimeout(drawGame, 10000/ 60);
   player.draw(ctx);
 };
-
 drawGame();
