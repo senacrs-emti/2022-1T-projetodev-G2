@@ -7,7 +7,7 @@ const ctx = canvas.getContext('2d');
 var fundoimg = new Image()
 
 function fundo(){
-  fundoimg.src = "./img/Cenário1.png";
+  fundoimg.src = "./img/Cenário.png";
   ctx.drawImage(fundoimg, 0, 0);  
 }
 
