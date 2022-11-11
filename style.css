@@ -2,7 +2,38 @@
     margin: 0;
     padding: 0;
 }
+#espacodojogo{
+    float: left;
+    width: 80%;
+    height: 650px;
+    background-color: black;
+}
 canvas{
+    float: left;
+}
+aside{
+    width: 20%;
+    height: 650px;
+    float: left;
+    background-color: aqua;
+}
+#glosario{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    margin-top: 10%;
+}
+.botao-aside{
+    width: 100px;
+    height: 100px;
+}
+button{
+    margin: 13px;
+}
+#botao-1{
+    width: 100px;
+    height: 100px;
+    background-size: 95px;
+    background-image: url(https://www.blogs.unicamp.br/100nexos/wp-content/uploads/sites/219/2011/08/planetaterranasae41hjkdaslfh1.jpg);
 }
