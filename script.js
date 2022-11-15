@@ -8,7 +8,9 @@ var fundoimg = new Image()
 var personagem = new Image();//Imagem que será carregada e desenhada na canvas
 var posicao = 0;//Indicador da posição atual do personagem
 var NUM_POSICOES = 6;//Quantidade de imagens que compõem o movimento
-var gravidade = 2
+var gravidade = 0.5;
+var chão = 60;
+
 function fundo(){
   fundoimg.src = "./img/Cenário.png";
   ctx.drawImage(fundoimg, 0, 0);  
@@ -27,7 +29,7 @@ class Jogador{
     }
     this.velocidade = {
       x:0,
-      y:0
+      y:1
     }
     this.width = 30
     this.height = 30
@@ -39,18 +41,13 @@ class Jogador{
   update(){
     this.desenhar()
     this.position.y += this.velocidade.y
-    this.velocidade.y += gravidade
+
     if (this.position.y + this.height + this.velocidade.y <= canvas.height)
     this.velocidade.y += gravidade
     else this.velocidade.y = 0
     }
 }
-var jogador = new Jogador()
-
-addEventListener('keydown', () => {
-  console.log('keydown')
-})
-
+const jogador = new Jogador()
 //game loop
 function drawGame() {
   clearScream();
@@ -61,3 +58,36 @@ function drawGame() {
 };
 drawGame();
 
+function KeyDown(evt){
+    switch (evt.keyCode) {
+        case 39:  /*seta para direita*/
+            if (x + velocidade < canvas.width){
+                x += velocidade;
+                posicao++;
+                if(posicao == NUM_POSICOES)
+                    posicao = 1;
+            }
+            break;            
+    }
+}
+addEventListener('keydown', ({ keyCode }) => {
+    switch (keyCode) {
+      case 65:
+        console.log ('esquerda')
+        jogador.velocidade.x -= 20
+        break
+      
+      case 83:
+        console.log ('baixo')
+        break
+      
+      case 68:
+        console.log ('direita')
+        break
+
+      case W:
+        console.log ('cima')
+        jogador.velocidade.y -= 20
+        break
+    }
+  })
