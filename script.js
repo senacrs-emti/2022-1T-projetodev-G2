@@ -8,7 +8,7 @@ var fundoimg = new Image()
 var personagem = new Image();//Imagem que será carregada e desenhada na canvas
 var posicao = 0;//Indicador da posição atual do personagem
 var NUM_POSICOES = 6;//Quantidade de imagens que compõem o movimento
-var gravidade = 0.5;
+var gravidade = 1.5;
 var chão = 60;
 
 function fundo(){
@@ -29,7 +29,7 @@ class Jogador{
     }
     this.velocidade = {
       x:0,
-      y:1
+      y:0
     }
     this.width = 30
     this.height = 30
@@ -55,6 +55,7 @@ function drawGame() {
   ctx.drawImage(fundoimg, 0, 0);
   requestAnimationFrame(drawGame)
   jogador.update()
+
 };
 drawGame();
 
@@ -85,7 +86,7 @@ addEventListener('keydown', ({ keyCode }) => {
         console.log ('direita')
         break
 
-      case W:
+      case 87:
         console.log ('cima')
         jogador.velocidade.y -= 20
         break
