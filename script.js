@@ -39,7 +39,15 @@ class Jogador{
     else this.velocidade.y = 0
     }
 }
-const jogador = new Jogador()
+const jogador = new Jogador
+const botoes = {
+  direita: {
+    pressed: false
+  },
+  esquerda: {
+    pressed: false
+  }
+}
 
 //game loop
 function animate(){
@@ -47,6 +55,14 @@ function animate(){
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   fundo();
   jogador.update()
+  if(botoes.direita.pressed) {
+    jogador.velocidade.x = 5
+  } else if (botoes.esquerda.pressed){
+    jogador.velocidade.x = -5
+  }
+  else jogador.velocidade.x = 0
+
+  
 }
 
 animate()
@@ -55,7 +71,7 @@ addEventListener('keydown', ({ keyCode }) => {
     switch (keyCode) {
       case 65:
         console.log ('esquerda')
-        jogador.velocidade.x -= 2
+        botoes.esquerda.pressed = true
         break
       
       case 83:
@@ -64,7 +80,7 @@ addEventListener('keydown', ({ keyCode }) => {
       
       case 68:
         console.log ('direita')
-        jogador.velocidade.x += 2
+        botoes.direita.pressed = true
         break
 
       case 87:
@@ -77,7 +93,7 @@ addEventListener('keydown', ({ keyCode }) => {
     switch (keyCode) {
       case 65:
         console.log ('esquerda')
-        jogador.velocidade.x = 0
+        botoes.esquerda.pressed = false
         break
       
       case 83:
@@ -86,7 +102,7 @@ addEventListener('keydown', ({ keyCode }) => {
       
       case 68:
         console.log ('direita')
-        jogador.velocidade.x = 0
+        botoes.direita.pressed = false
         break
 
       case 87:
