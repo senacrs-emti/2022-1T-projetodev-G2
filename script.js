@@ -55,7 +55,7 @@ addEventListener('keydown', ({ keyCode }) => {
     switch (keyCode) {
       case 65:
         console.log ('esquerda')
-        jogador.velocidade.x -= 20
+        jogador.velocidade.x -= 2
         break
       
       case 83:
@@ -64,12 +64,12 @@ addEventListener('keydown', ({ keyCode }) => {
       
       case 68:
         console.log ('direita')
-        jogador.velocidade.x += 20
+        jogador.velocidade.x += 2
         break
 
       case 87:
         console.log ('cima')
-        jogador.velocidade.y -= 20
+        jogador.velocidade.y -= 15
         break
     }
   })
