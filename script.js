@@ -32,6 +32,7 @@ class Jogador{
   update(){
     this.desenhar()
     this.posicao.y += this.velocidade.y
+    this.posicao.x += this.velocidade.x
 
     if (this.posicao.y + this.height + this.velocidade.y <= 550)
     this.velocidade.y += gravidade
@@ -63,6 +64,7 @@ addEventListener('keydown', ({ keyCode }) => {
       
       case 68:
         console.log ('direita')
+        jogador.velocidade.x += 20
         break
 
       case 87:
