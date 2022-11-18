@@ -7,6 +7,8 @@ var ctx = canvas.getContext('2d');
 var fundoimg = new Image()
 var personagem = new Image();//Imagem que será carregada e desenhada na canvas
 var gravidade = 1.5;
+var Telaincial = new Image();
+
 
 function fundo(){
   fundoimg.src = "./img/Cenário.png";
