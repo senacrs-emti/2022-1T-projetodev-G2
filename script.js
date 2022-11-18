@@ -16,7 +16,7 @@ class Jogador{
   constructor(){
     this.posicao = {
       x:100,  
-      y:100
+      y:520
     }
     this.velocidade = {
       x:0,
@@ -105,9 +105,6 @@ addEventListener('keydown', ({ keyCode }) => {
         botoes.direita.pressed = false
         break
 
-      case 87:
-        console.log ('cima')
-        jogador.velocidade.y -= 15
-        break
-    }
+        
+      }
   })
