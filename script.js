@@ -6,7 +6,7 @@ var ctx = canvas.getContext('2d');
 
 var fundoimg = new Image()
 var personagem = new Image();//Imagem que será carregada e desenhada na canvas
-var gravidade = 1.5;
+var gravidade = 9.8/15;
 var Telaincial = new Image();
 
 
@@ -58,9 +58,9 @@ function animate(){
   fundo();
   jogador.update()
   if(botoes.direita.pressed) {
-    jogador.velocidade.x = 5
+    jogador.velocidade.x = 2
   } else if (botoes.esquerda.pressed){
-    jogador.velocidade.x = -5
+    jogador.velocidade.x = -2
   }
   else jogador.velocidade.x = 0
 
@@ -87,7 +87,7 @@ addEventListener('keydown', ({ keyCode }) => {
 
       case 87:
         console.log ('cima')
-        jogador.velocidade.y -= 15
+        jogador.velocidade.y = -9
         break
     }
   })
