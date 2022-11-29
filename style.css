@@ -1,33 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-.menup{
-    width: 100%;
-    height: 1500px;
-    background-image:url(./img/space.png) ;
-    background-size: 100% ;
-    background-repeat: no-repeat;
-}
-
-.btnplay{
-    height: auto;
-    position: absolute;
-    top: 45%;
-    left: 45%;
-}
-
-.btnplay button{
-    background-color: transparent;
-    border: 0;
-}
-
-.btnplay img{
-    width: 100px;
-    height: 100px;    
-}
-
 .espacodojogo{
     float: left;
     width: 80%;
@@ -62,4 +37,31 @@ button{
     height: 100px;
     background-size: 95px;
     background-image: url(https://www.blogs.unicamp.br/100nexos/wp-content/uploads/sites/219/2011/08/planetaterranasae41hjkdaslfh1.jpg);
+}
+#botao-2{
+    width: 100px;
+    height: 100px;
+    background-size: 95px;
+    background-image: url(https://media.istockphoto.com/id/157638771/pt/foto/terra-de-lua-cheia-v3.jpg?s=612x612&w=0&k=20&c=nUPx6F661m5xo-ONBzVp_083XTcSZdXEe8GTshxRHYI=);
+}
+#botao-3{
+    width: 100px;
+    height: 100px;
+    background-size: 95px;
+    background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/36965_F44C83AB5F977CB6-1.jpg?w=1024);
+}
+#botao-4{
+    width: 100px;
+    height: 100px;
+    background-size: 95px;
+    background-image: url(https://s2.glbimg.com/MQvA-JodTp5Xi2G6buccmjgTERQ=/e.glbimg.com/og/ed/f/original/2019/03/28/neptune-thumbnail.jpg);
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+}
+main section img{
+    width: 200px;
+    height: 200px;
 }
