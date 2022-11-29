@@ -3,6 +3,11 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+body{
+    background-color: black;
+}
+
 .espacodojogo{
     float: left;
     width: 80%;
@@ -64,4 +69,37 @@ main{
 main section img{
     width: 200px;
     height: 200px;
+}
+
+.planeta-imagem{
+    animation: rotação 10s infinite ease-in-out;
+}
+
+@keyframes rotação{
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(60deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(60deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+
+
+{
+    animation: rotação 20s infinite ease-in-out;
 }
