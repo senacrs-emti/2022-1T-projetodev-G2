@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        img{
+            width: 50px;
+        }
+        section
+
+{
+    animation: translação 20s infinite ease-in-out;
+}
+
+@keyframes rotação{
+
+0%{
+    transform: rotate(0deg);
+}
+
+25%{
+    transform: rotate(60deg);
+}
+
+50%{
+    transform: rotate(0deg);
+}
+
+75%{
+    transform: rotate(60deg);
+}
+
+100%{
+    transform: rotate(0deg);
+}
+
+}
+
+section
+{
+animation: translação 20s infinite ease-in-out;
+}
+
+
+
+
+@keyframes translação{
+
+from{
+    transform: rotate(0deg);
+}
+
+to{
+    transform: rotate(360deg);
+}
+
+}   
+
+    </style>
 </head>
 <body class="menua">
     <header>
@@ -15,21 +70,11 @@
     </header>
     <main>
         <section>
-            <h2>TERRA</h2>
-            <img src="https://www.blogs.unicamp.br/100nexos/wp-content/uploads/sites/219/2011/08/planetaterranasae41hjkdaslfh1.jpg" alt="">
-        </section>
-        <section>
-            <h2>LUA</h2>
-            <img src="https://media.istockphoto.com/id/157638771/pt/foto/terra-de-lua-cheia-v3.jpg?s=612x612&w=0&k=20&c=nUPx6F661m5xo-ONBzVp_083XTcSZdXEe8GTshxRHYI=" alt="">
-        </section>
-        <section>
-            <h2>JÚPITER</h2>
-            <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/36965_F44C83AB5F977CB6-1.jpg?w=1024" alt="">
-        </section>
-        <section>
-            <h2>NETUNO</h2>
-            <img src="https://s2.glbimg.com/MQvA-JodTp5Xi2G6buccmjgTERQ=/e.glbimg.com/og/ed/f/original/2019/03/28/neptune-thumbnail.jpg" alt="">
-            <button><a href="simulacaonetuno.html">A</a></button>
+            <a href="./simulacaoterra.html"><img src="img/earth.png" class="planeta-imagem" alt=""></a>
+            <img src="./img/moon.png" alt="" class="planeta-imagem">
+            <div><img src="./img/the_sun.png" id="sun" alt=""></div>
+            <img src="./img/netuno.png" alt="" class="planeta-imagem"> 
+            <img src="./img/jupiter.png" alt="" class="planeta-imagem">
         </section>
     </main>
 </body>
