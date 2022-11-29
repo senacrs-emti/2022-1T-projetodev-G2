@@ -67,39 +67,12 @@ main{
     justify-content: space-around;  
 }
 main section img{
-    width: 200px;
     height: 200px;
+}
+#sun{
+    position: absolute;
 }
 
 .planeta-imagem{
     animation: rotação 10s infinite ease-in-out;
-}
-
-@keyframes rotação{
-
-    0%{
-        transform: rotate(0deg);
-    }
-
-    25%{
-        transform: rotate(60deg);
-    }
-
-    50%{
-        transform: rotate(0deg);
-    }
-
-    75%{
-        transform: rotate(60deg);
-    }
-
-    100%{
-        transform: rotate(0deg);
-    }
-    
-}
-
-
-{
-    animation: rotação 20s infinite ease-in-out;
 }
