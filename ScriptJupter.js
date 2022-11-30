@@ -11,7 +11,7 @@ var Telaincial = new Image();
 
 
 function fundo(){
-  fundoimg.src = "./img/Cenário.png";
+  fundoimg.src = "./img/jupiterceu.png";
   ctx.drawImage(fundoimg, 0, 0);  
 }
 class Jogador{
