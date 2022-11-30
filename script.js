@@ -10,7 +10,6 @@ var personagem = new Image();//Imagem que será carregada e desenhada na canvas
 var gravidade = (6.67*(10**-11))*(6*(10**24))/(6.4*(10**6))**2/10;
 var Telaincial = new Image();
 
-
 function fundo(){
   fundoimg.src = "./img/Cenário.png";
   ctx.drawImage(fundoimg, 0, 0);  
