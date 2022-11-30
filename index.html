@@ -5,13 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
     <style>
-
+section{
+    display: flex;
+    justify-content: space-around;
+}
+#terra{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    border-radius: 100%;
+}
+#lua{
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 100%;
+}
+#sun{
+    width: 200px;
+    height: 200px;
+    background-image: url(./img/the_sun.png);
+    border-radius: 100%;
+}
+#jupiter{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(199, 57, 13);
+    border-radius: 100%;
+}
+#Netuno{
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 100%;
+}
+section
 {
     animation: translação 20s infinite ease-in-out;
 }
-
 @keyframes rotação{
 
 0%{
@@ -23,27 +55,18 @@
 }
 
 50%{
-    transform: rotate(0deg);
+    transform: rotate(150deg);
 }
 
 75%{
-    transform: rotate(60deg);
+    transform: rotate(210deg);
 }
 
 100%{
-    transform: rotate(0deg);
+    transform: rotate(360deg);
 }
 
 }
-
-section
-{
-animation: translação 20s infinite ease-in-out;
-}
-
-
-
-
 @keyframes translação{
 
 from{
@@ -66,11 +89,13 @@ to{
     </header>
     <main>
         <section>
-            <a href="./simulacaoterra.html"><img src="img/earth.png" class="planeta-imagem" alt=""></a>
-            <img src="./img/moon.png" alt="" class="planeta-imagem">
-            <div><img src="./img/the_sun.png" id="sun" alt=""></div>
-            <img src="./img/netuno.png" alt="" class="planeta-imagem"> 
-            <img src="./img/jupiter.png" alt="" class="planeta-imagem">
+        <div>
+            <a href="./simulacaoterra.html"><div id="terra"></div></a>
+            <a href="./simulacaolua.html"><div id="lua"></div></a>
+        </div>
+        <div id="sun"></div>
+        <a href="./simulacaojupiter.html"><div id="jupiter"></div></a>
+        <a href="./simulacaonetuno.html"><div id="Netuno"></div></a>
         </section>
     </main>
 </body>
