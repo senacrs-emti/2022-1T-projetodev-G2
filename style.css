@@ -44,13 +44,14 @@ button{
     width: 100px;
     height: 100px;
     background-size: 95px;
-    background-image: url(https://www.blogs.unicamp.br/100nexos/wp-content/uploads/sites/219/2011/08/planetaterranasae41hjkdaslfh1.jpg);
+    background-image: url(./img/earth.png);
+    background-color: none;
 }
 #botao-2{
     width: 100px;
     height: 100px;
     background-size: 95px;
-    background-image: url(https://media.istockphoto.com/id/157638771/pt/foto/terra-de-lua-cheia-v3.jpg?s=612x612&w=0&k=20&c=nUPx6F661m5xo-ONBzVp_083XTcSZdXEe8GTshxRHYI=);
+    background-image: url(./img/earth.png);
 }
 #botao-3{
     width: 100px;
