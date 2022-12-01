@@ -40,30 +40,21 @@ aside{
 button{
     margin: 13px;
 }
-#botao-1{
+#terra{
     width: 100px;
     height: 100px;
-    background-size: 95px;
-    background-image: url(./img/earth.png);
-    background-color: none;
 }
-#botao-2{
+#Lua{
     width: 100px;
     height: 100px;
-    background-size: 95px;
-    background-image: url(./img/earth.png);
 }
-#botao-3{
+#Jupiter{
     width: 100px;
     height: 100px;
-    background-size: 95px;
-    background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/06/36965_F44C83AB5F977CB6-1.jpg?w=1024);
 }
-#botao-4{
+#Netuno{
     width: 100px;
     height: 100px;
-    background-size: 95px;
-    background-image: url(https://s2.glbimg.com/MQvA-JodTp5Xi2G6buccmjgTERQ=/e.glbimg.com/og/ed/f/original/2019/03/28/neptune-thumbnail.jpg);
 }
 main{
     display: flex;
