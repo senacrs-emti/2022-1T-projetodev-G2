@@ -12,7 +12,7 @@ var Telaincial = new Image();
 
 
 function fundo(){
-  fundoimg.src = "./img/CenárioLua.jpg";
+  fundoimg.src = "./img/CenárioLua2.jpg"
   ctx.drawImage(fundoimg, 0, 0);  
 }
 class Jogador{
