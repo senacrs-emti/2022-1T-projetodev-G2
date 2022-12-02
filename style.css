@@ -5,7 +5,7 @@
 }
 
 body{
-    background: url(/img/space.jpg);
+    background-image: url(/img/space.jpg);
     background-size: 100%;
 }
 
@@ -44,6 +44,7 @@ button{
 #terra{
     width: 90px;
     height: 90px;
+    margin-right: 40px;
 }
 #Lua{
     width: 100px;
