@@ -19,7 +19,7 @@ function fundo(){
 }
 
 
-class Jogador{
+class Jogador {
   constructor(){
     this.posicao = {
       x:100,  
