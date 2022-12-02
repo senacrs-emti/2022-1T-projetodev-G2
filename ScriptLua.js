@@ -1,16 +1,13 @@
 
 //criar a variavel do jogo e pedir para o canvas trabalhar em 2d
-
 var canvas = document.getElementById('jogo');
 var ctx = canvas.getContext('2d');
 
 var fundoimg = new Image()
-var personagem = new Image();//Imagem que será carregada e desenhada na canvas
 //gravidade = contanteGravitacional x massa do corpo / raio²
 var gravidade = (6.67*(10**-11))*(7.35*(10**22))/(1.737*(10**6))**2/10;
 var Telaincial = new Image();
-
-
+var personagemimg = new Image();
 function fundo(){
   fundoimg.src = "./img/CenárioLua2.jpg"
   ctx.drawImage(fundoimg, 0, 0);  
@@ -19,25 +16,28 @@ class Jogador{
   constructor(){
     this.posicao = {
       x:100,  
-      y:520
+      y:420
     }
     this.velocidade = {
       x:0,
       y:0
     }
-    this.width = 30
-    this.height = 30
+    this.width = 60
+    this.height = 80
   }
   desenhar(){
-    ctx.fillRect(this.posicao.x, this.posicao.y, this.width, this.height)
-    ctx.fillStyle = ('red')
+    this.personagem()
+  }
+  personagem(){
+    personagemimg.src = "./img/frame1.png"
+    ctx.drawImage(personagemimg, this.posicao.x, this.posicao.y, this.width, this.height);
   }
   update(){
     this.desenhar()
     this.posicao.y += this.velocidade.y
     this.posicao.x += this.velocidade.x
 
-    if (this.posicao.y + this.height + this.velocidade.y <= 550)
+    if (this.posicao.y + this.height + this.velocidade.y <= 570)
     this.velocidade.y += gravidade
     else this.velocidade.y = 0
     }
