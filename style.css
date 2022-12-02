@@ -5,8 +5,9 @@
 }
 
 body{
-    background-image: url(/img/space.jpg);
+    background-image: url(/img/space.png);
     background-size: 100%;
+    background-color: black;
 }
 
 .espacodojogo{
