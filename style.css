@@ -6,6 +6,7 @@
 
 body{
     background: url(/img/space.jpg);
+    background-size: 100%;
 }
 
 .espacodojogo{
