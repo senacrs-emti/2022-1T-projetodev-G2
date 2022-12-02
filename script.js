@@ -6,8 +6,14 @@ var ctx = canvas.getContext('2d');
 var personagemimg = new Image();
 var fundoimg = new Image()
 var personagem = new Image();//Imagem que será carregada e desenhada na canvas
+
 //gravidade = contanteGravitacional x massa do corpo / raio²
-var gravidade = (6.67*(10**-11))*(6*(10**24))/(6.4*(10**6))**2/10;
+var ConstGravitacional = 6.67*(10**(-11));
+var MassaT = 6*(10**24)
+var raio = 6.4*(10**6)
+var gravidade = ConstGravitacional*MassaT/(raio**2)/10
+
+
 var Telaincial = new Image();
 var boneco= new Image();
 
@@ -38,7 +44,10 @@ class Jogador {
   }
 
   personagem(){
-    personagemimg.src = "./img/frame1.png"
+    if(botoes.direita.pressed){
+      personagemimg.src = "./img/frame1.png"
+    }
+    else personagemimg.src = "./img/frame2.png"
     ctx.drawImage(personagemimg, this.posicao.x, this.posicao.y, this.width, this.height);
   }
   update(){

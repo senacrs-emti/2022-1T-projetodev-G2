@@ -6,9 +6,13 @@ var ctx = canvas.getContext('2d');
 var personagemimg = new Image();
 var fundoimg = new Image()
 var personagem = new Image();//Imagem que será carregada e desenhada na canvas
-//gravidade = contanteGravitacional x massa do corpo / raio²
-var gravidade =(6.67*(10**-11))*(1.89*(10**27))/(6.911*(10**7))**2/10;
 var Telaincial = new Image();
+
+//gravidade = contanteGravitacional x massa do corpo / raio²
+var ConstGravitacional = 6.67*(10**(-11))
+var MassaJ = 1.89*(10**27)
+var RaioJ = 6.911*(10**7)
+var gravidade = ConstGravitacional*MassaJ/(RaioJ**2)/10
 
 
 function fundo(){

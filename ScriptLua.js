@@ -4,8 +4,15 @@ var canvas = document.getElementById('jogo');
 var ctx = canvas.getContext('2d');
 
 var fundoimg = new Image()
+
+
 //gravidade = contanteGravitacional x massa do corpo / raio²
-var gravidade = (6.67*(10**-11))*(7.35*(10**22))/(1.737*(10**6))**2/10;
+var ConstGravitacional = 6.67*(10**(-11))
+var MassaL = 7.35*(10**22)
+var RaioL = 1.737*(10**6)
+var gravidade = ConstGravitacional*MassaL/(RaioL**2)/10
+
+
 var Telaincial = new Image();
 var personagemimg = new Image();
 function fundo(){
