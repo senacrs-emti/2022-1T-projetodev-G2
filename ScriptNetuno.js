@@ -32,8 +32,8 @@ class Jogador{
       x:0,
       y:0
     }
-    this.width = 60
-    this.height = 80
+    this.width = 80
+    this.height = 100
   }
   desenhar(){
     this.personagem()
@@ -41,6 +41,9 @@ class Jogador{
   personagem(){
     if(botoes.direita.pressed){
       personagemimg.src = "./img/frame1.png"
+    }
+    else if(botoes.esquerda.pressed){
+      personagemimg.src = "./img/frame3.png"
     }
     else personagemimg.src = "./img/frame2.png"
     ctx.drawImage(personagemimg, this.posicao.x, this.posicao.y, this.width, this.height);
