@@ -27,8 +27,6 @@ aside{
     background: url(./img/space2.png);
     background-size:100% 650px; 
     background-repeat:no-repeat ;
-    display: flex;
-    justify-items: center;
 }
 #glosario{
     display: flex;

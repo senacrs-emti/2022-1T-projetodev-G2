@@ -36,7 +36,10 @@ class Jogador{
     this.personagem()
   }
   personagem(){
-    personagemimg.src = "./img/frame1.png"
+    if(botoes.direita.pressed){
+      personagemimg.src = "./img/frame1.png"
+    }
+    else personagemimg.src = "./img/frame2.png"
     ctx.drawImage(personagemimg, this.posicao.x, this.posicao.y, this.width, this.height);
   }
   update(){
