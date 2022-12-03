@@ -48,9 +48,9 @@ class Jogador {
       personagemimg.src = "./img/frame1.png"
     }
     else if(botoes.esquerda.pressed){
-      personagemimg.src = "./img/frame3.png"
+      personagemimg.src = "./img/frame4.png"
     }
-    else personagemimg.src = "./img/frame2.png"
+    else personagemimg.src = "./img/pixil-frame-5.png"
     ctx.drawImage(personagemimg, this.posicao.x, this.posicao.y, this.width, this.height);
   }
   update(){
